@@ -6,9 +6,12 @@ class Backer
     @backed_projects = []
   end
 
+  def backend_projects
+    @backend_projects.dup
+  end
+
   def back_project(project)
     @backed_projects << project
-    project.add_backer(self)
   end
 
 end
