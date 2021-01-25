@@ -8,7 +8,7 @@ class Project
   end
 
   def backers
-    @backers.dupe.freeze
+    @backers.dupe
   end
 
   def add_backer(backer)
