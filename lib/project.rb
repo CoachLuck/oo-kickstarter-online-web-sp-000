@@ -7,9 +7,9 @@ class Project
   end
 
   def add_backer(backer)
-    puts "#{@backers}, #{backers}"
     backers << backer
     backer.backed_projects << self
+    puts "#{@backers}, #{backers}"
   end
 
 end
