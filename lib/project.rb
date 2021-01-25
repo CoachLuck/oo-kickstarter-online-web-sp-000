@@ -8,5 +8,5 @@ class Project
     @backers = []
     @@all << self
   end
-  
+
 end
