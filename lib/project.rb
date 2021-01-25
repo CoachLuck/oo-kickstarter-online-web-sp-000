@@ -13,4 +13,12 @@ class Project
     @backers << backer
   end
 
+  def self.all
+    @@all
+  end
+
+  def self.getProject(title)
+    Project.all.find {|proj| proj.title = title}
+  end
+
 end
