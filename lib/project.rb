@@ -7,6 +7,10 @@ class Project
     @backers = []
   end
 
+  def backers
+    @backers.dup.freeze
+  end
+
   def add_backer(backer)
     #backer.back_project(self) if !backer.backed_projects.include?(self)
     @backers << backer if !@backers.include?(backer)
