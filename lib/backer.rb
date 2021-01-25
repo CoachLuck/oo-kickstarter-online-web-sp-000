@@ -6,12 +6,12 @@ class Backer
     @backed_projects = []
   end
 
-  def backend_projects
-    @backend_projects.dup
+  def backed_projects
+    @backed_projects.dup
   end
 
   def back_project(project)
-    @backed_projects << project
+    @backed_projects << project if !@backed_projects.include?(project)
   end
 
 end
