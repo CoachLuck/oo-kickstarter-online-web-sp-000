@@ -17,8 +17,4 @@ class Project
     @@all
   end
 
-  def self.getProject(title)
-    Project.all.find {|proj| proj.title = title}
-  end
-
 end
