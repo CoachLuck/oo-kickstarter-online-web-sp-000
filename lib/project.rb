@@ -7,13 +7,8 @@ class Project
     @backers = []
   end
 
-  def backers
-    @backers.dup.freeze
-  end
-
   def add_backer(backer)
     @backers << backer
-    backer.backed_projects << self
   end
 
   def self.all
